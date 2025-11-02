@@ -5,6 +5,9 @@ let disableDeck = false;
 const cards = document.querySelectorAll(".card");
 const audio1 = new Audio("/sounds/victory-chime-366449.mp3")
 const message = document.getElementById('win');
+let player1Score = 0
+let player2Score = 0
+let courrentPlayer = 1; 2
 
 function win() {
     audio1.play()
@@ -36,6 +39,7 @@ function checkMatch() {
     let emoji2 = cardTwo.querySelector(".back-view").textContent;
 
     if (emoji1 === emoji2) {
+        updateScore()
         matchedPairs++;
         if (matchedPairs === 8) {
             win();
@@ -77,11 +81,23 @@ function resetGame() {
         card.addEventListener("click", flipCard);
     });
 }
-function showWinMessage() {
-    document.getElementById("win-message").style.display="flex";
-    setTimeout
+function updateScore() {
+    if (courrentPlayer === 1) {
+        player1Score++
+    } else {
+        player2Score++
+
+    }
+}
+function updateInfo(){
+    const player1 = document.getElementById("player1").textContent
+    const player2 = document.getElementById("player2").textContent
+    
 
 }
-let player1Score = 0
-let player2Score = 0
-let courrentPlayer = 1;2 
+
+function showWinMessage() {
+    document.getElementById("win-message").style.display = "flex";
+    setTimeout
+
+} 

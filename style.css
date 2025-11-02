@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #6563FF;
+    background: #2d64a7;
     font-family: fantasy;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    background: #F8F8F8;
+    background: #2bcda760;
     padding: 25px;
     border-radius: 30px;
     position: relative;
@@ -23,8 +23,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     gap: 10px;
     padding: 0px
 }
@@ -168,7 +168,7 @@ body {
     width: 90px;
     font-size: 1, 5em;
     border: 2px;
-    color: #fff; 
+    color: #ffffff; 
 }
 .game{
     display: flex;
@@ -181,18 +181,14 @@ body {
     font-weight: bold;
     text-align: center;
     margin-block: 12px;
+    color: #f1fdfd;
 }
-.player1 {
+.player {
     display: flex;
     justify-content: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
     width: 30%;
-
-}
-.player2 {
-    display: flex;
-    justify-content: center;
-    padding: 10px 30px;
-    width: 30%;
-    
+    color: #fff;
+    border-radius: 10%;
+    background: black 10px;
 }
