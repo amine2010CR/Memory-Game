@@ -118,48 +118,6 @@ body {
 }
 
 
-#win-message {
-    position: absolute;
-    top: 32%;
-    left: 17%;
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    background-color: #00ffff13;
-    z-index: 99;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    animation: winAnimation 2s ease-in-out infinite alternate;
-
-    /* transform: translate(-50%, -50%);
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 0 0 20px #ff00ff;
-    z-index: 9999; */
-}
-
-/* Keyframe animation */
-@keyframes winAnimation {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        color: #ff00ff;
-        text-shadow: 0 0 20px #ff00ff;
-    }
-
-    50% {
-        transform: translate(-50%, -50%) scale(1.2) rotate(5deg);
-        color: #00ffff;
-        text-shadow: 0 0 40px #00ffff;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        color: #ffff00;
-        text-shadow: 0 0 20px #ffff00;
-    }
-}
 
 .player.info {
     display: flex;
@@ -168,27 +126,52 @@ body {
     width: 90px;
     font-size: 1, 5em;
     border: 2px;
-    color: #ffffff; 
+    color: #ffffff;
 }
-.game{
+
+.game {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-} 
-.current{
-    font-size: 1,5em;
+    width: 80%;
+}
+
+.current {
+    font-size: 1, 5em;
     font-weight: bold;
     text-align: center;
     margin-block: 12px;
     color: #f1fdfd;
 }
+
 .player {
-    display: flex;
-    justify-content: center;
-    padding: 10px 20px;
-    width: 30%;
+    background: black;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: solid 2px white;
     color: #fff;
-    border-radius: 10%;
-    background: black 10px;
+}
+
+#player1 #player2 {
+    font-size: 1, 5em;
+    margin: 15px;
+    text-align: center;
+}
+
+.info {
+    font-size: 4, 5em;
+    color: #ffffff;
+}
+
+.win-message{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 10px;
+    
 }
